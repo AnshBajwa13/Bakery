@@ -1,13 +1,4 @@
-/* ─────────────────────────────────────────────────────────────
-   PRODUCT DATA
-   ─────────────────────────────────────────────────────────────
-   HOW TO ADD YOUR OWN IMAGES:
-   1. Put your image files inside the  images/products/  folder
-   2. Update the  image  field below with the filename
-      e.g.  image: 'images/products/my-bread.jpg'
-   3. Change name, price, category as needed
-   Categories:  'bread' | 'pastry' | 'special'
-───────────────────────────────────────────────────────────── */
+
 const PRODUCTS = [
   {
     id: 1,
