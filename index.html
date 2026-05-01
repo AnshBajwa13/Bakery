@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Maison Du Beurre — Artisan bakery offering freshly baked breads, pastries & more. Order online with easy cart checkout." />
+  <title>Maison Du Beurre | Boulangerie Artisanale</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    .navbar {
+      background: rgba(92, 45, 14, .96) !important
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Logo" class="logo-img" onerror="this.style.display='none'" />
+        <span class="logo-text">La Maison du Beurre</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#offer">Offers</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ────────────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/image.png" alt="Artisan bread" class="hero-img" onerror="this.style.display='none'" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Freshly Baked Daily</p>
+      <h1 class="hero-title">Artisan Bread<br /><em>& Pastries</em></h1>
+      <p class="hero-sub">Crafted with love, baked with tradition. Every loaf tells a story of flavour and heritage.</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+        <a href="#offer" class="btn btn-outline">Our Offers</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── PRODUCTS ─────────────────────────────────────────── -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Our Specialties</p>
+        <h2 class="section-title">Top Products</h2>
+        <p class="section-sub">Handcrafted every morning using only the finest ingredients</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bread">Breads</button>
+        <button class="filter-btn" data-filter="pastry">Pastries</button>
+        <button class="filter-btn" data-filter="special">Specials</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROMO BANNER ──────────────────────────────────────── -->
+  <section class="promo-banner" id="offer">
+    <div class="promo-inner">
+      <div class="promo-img promo-img-left">
+        <img src="images/promo-left.jpg" alt="Fresh baguettes" onerror="this.style.display='none'" />
+      </div>
+      <div class="promo-content">
+        <h2 class="promo-title">20% Off Your<br /><em>First Order</em></h2>
+        <p class="promo-desc">Use code <strong>WELCOME20</strong> at checkout and enjoy our finest artisan breads
+          delivered right to your door.</p>
+        <a href="#products" class="btn btn-promo">Shop Now</a>
+      </div>
+      <div class="promo-img promo-img-right">
+        <img src="images/promo-right.jpg" alt="Assorted breads" onerror="this.style.display='none'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT / FEATURED ──────────────────────────────────── -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-logo-wrap">
+        <div class="about-logo-ring">
+          <img src="images/logo.png" alt="Maison Du Beurre" class="about-logo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="logo-text-fallback" style="display:none">
+            <span>🥐</span>
+            <p>Maison Du Beurre</p>
+            <small>Boulangerie Artisanale</small>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><strong>12+</strong><span>Years of Craft</span></div>
+          <div class="stat"><strong>40+</strong><span>Products</span></div>
+          <div class="stat"><strong>5K+</strong><span>Happy Customers</span></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">Baked with Passion,<br />Served with Pride</h2>
+        <p>Founded in the heart of the city, Maison Du Beurre has been crafting artisan breads and pastries for over a
+          decade. We source the finest organic grains and use traditional techniques to bring you bread the way it was
+          meant to be.</p>
+        <p>From our sourdough starter that's been alive for 10 years, to our buttery croissants laminated by hand —
+          every product is a labour of love.</p>
+        <a href="menu.pdf" target="_blank" class="btn btn-primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURED PRODUCT ──────────────────────────────────── -->
+  <section class="featured-section">
+    <div class="featured-bg">
+      <img src="images/products/product1.jpeg" alt="Rosemary Tomato Focaccia" class="featured-img"
+        onerror="this.style.display='none'" />
+      <div class="featured-overlay"></div>
+    </div>
+    <div class="featured-content">
+      <p class="section-tag light">Chef's Special</p>
+      <h2 class="featured-title">Focaccia</h2>
+      <p class="featured-desc">Olive oil rich, herb topped on a cloud-like sourdough base.</p>
+      <div class="featured-price">Rs. 300 <small>/ piece</small></div>
+      <button class="btn btn-primary" onclick="quickAdd(99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Visit or Order</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 21c-4.418 0-8-4.03-8-9a8 8 0 1 1 16 0c0 4.97-3.582 9-8 9z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3>Location</h3>
+          <p>12 Rue de la Boulangerie,<br />Paris, 75001</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3>Opening Hours</h3>
+          <p>Mon – Sat: 7am – 8pm<br />Sunday: 8am – 6pm</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12 19.79 19.79 0 0 1 1.05 3.4 2 2 0 0 1 3 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16l.92.92z" />
+            </svg>
+          </div>
+          <h3>Order Hotline</h3>
+          <p>+1 (555) 123-4567<br />orders@maisondubeurre.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Maison Du Beurre</p>
+      <p class="footer-copy">© 2025 Maison Du Beurre. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── CART SIDEBAR ──────────────────────────────────────── -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your cart is empty.<br />Add some delicious items!</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ─── TOAST ─────────────────────────────────────────────── -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
